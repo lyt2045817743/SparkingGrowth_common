@@ -10,7 +10,7 @@ async function getConfigMap() {
 }
 
 async function getConfigByKey(key) {
-  const config = await db.get(ConfigStoreName, key);
+  const config = db ? await db.get(ConfigStoreName, key) : undefined;
   return config ? config.value : undefined;
 }
 
