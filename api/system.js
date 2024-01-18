@@ -1,4 +1,4 @@
-import { db } from '../../utils/globalState';
+import { db } from '../utils';
 
 const ConfigStoreName = 'config';
 
