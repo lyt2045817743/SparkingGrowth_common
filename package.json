@@ -1,0 +1,19 @@
+{
+  "name": "sparkinggrowth_common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyt2045817743/SparkingGrowth_common.git"
+  },
+  "author": "lyt2045817743",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lyt2045817743/SparkingGrowth_common/issues"
+  },
+  "homepage": "https://github.com/lyt2045817743/SparkingGrowth_common#readme"
+}
