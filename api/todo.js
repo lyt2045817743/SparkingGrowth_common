@@ -10,7 +10,7 @@ async function addTodo(todoInfo) {
 
 async function getChildTodoList() {
   let list = await db.getAll(TodoStoreName);
-  list = list.filter((item) => item.parentKey || !item.isRoot);
+  list = list.filter((item) => item.deadline && (item.parentKey || !item.isRoot));
   return Promise.resolve(list);
 }
 
