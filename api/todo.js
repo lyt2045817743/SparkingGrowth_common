@@ -8,12 +8,6 @@ async function addTodo(todoInfo) {
   return Promise.resolve(todoId);
 }
 
-async function getChildTodoList() {
-  let list = await db.getAll(TodoStoreName);
-  list = list.filter((item) => item.deadline && (item.parentKey || !item.isRoot));
-  return Promise.resolve(list);
-}
-
 async function deleteTodo(key) {
   await db.delete(TodoStoreName, key);
 }
