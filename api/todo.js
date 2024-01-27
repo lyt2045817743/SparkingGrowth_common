@@ -37,6 +37,5 @@ async function updateTodo(id, info) {
 export {
   addTodo,
   deleteTodo,
-  getChildTodoList,
   updateTodo
 }
