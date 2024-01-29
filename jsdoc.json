@@ -1,0 +1,11 @@
+{
+  "source": {
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "opts": {
+    "destination": "./doc/web",
+    "recurse": true,
+    "template": "node_modules/better-docs"
+  }
+}
