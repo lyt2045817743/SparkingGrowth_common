@@ -6,3 +6,6 @@
 export * from './point';
 export * from './todo';
 export * from './system';
+export * from './course';
+export * from './studyLog';
+export * from './book';

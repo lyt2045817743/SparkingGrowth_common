@@ -23,5 +23,10 @@
     "jsdoc": "^4.0.2",
     "better-docs": "^2.7.3",
     "docdash": "^2.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run doc"
+    }
   }
 }
