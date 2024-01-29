@@ -13,6 +13,5 @@ async function getCourseList() {
 }
 
 export {
-  addStudyLog,
   getCourseList,
 }
