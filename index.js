@@ -1,8 +1,8 @@
-import * as indexDBApi from './api';
+import * as indexDBApi from './src/api';
 
-export * from './constants';
-export * from './utils';
-export * from './logic';
+export * from './src/constants';
+export * from './src/utils';
+export * from './src/logic';
 
 export {
   indexDBApi

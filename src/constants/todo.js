@@ -1,3 +1,13 @@
+/**
+ * @memberof constants
+ * @name TodoStatusMap
+ * @description 待办状态枚举
+ * @enum {array}
+ * @property {number} Overdue -1，已逾期
+ * @property {number} Undo 0，未完成
+ * @property {number} Done 1，已完成
+ * @property {number} DoneButOverdue 3，逾期完成
+*/
 export const TodoStatusMap = {
   Overdue: -1,
   Undo: 0,
@@ -87,6 +97,12 @@ function getCascadeOptionsByFilter(filters) {
   }));
 }
 
+/**
+ * @memberof constants
+ * @name TypeCascadeOptions
+ * @description 待办分类级联选项
+ * @enum {array}
+*/
 export const TypeCascadeOptions = [
   {
     value: 100,
@@ -130,11 +146,25 @@ export const TypeCascadeOptions = [
   },
 ];
 
+/**
+ * @memberof constants
+ * @name CycleMap
+ * @description 待办循环类型枚举
+ * @enum {number}  
+ * @property {number} UnCycle 0，不循环
+ * @property {number} Everyday 1，每日
+*/
 export const CycleMap = {
   UnCycle: 0,
   Everyday: 1
 }
 
+/**
+ * @memberof constants
+ * @name CycleOptions
+ * @description 待办循环类型下拉数据
+ * @enum {array}
+*/
 export const CycleOptions = [
   {
     value: [CycleMap.UnCycle],

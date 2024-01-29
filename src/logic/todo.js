@@ -1,5 +1,13 @@
 import { TodoStatusMap, TodoTypeScore, PointEventTypeMap, CycleMap } from '../constants'
 
+
+/**
+ * @memberof logic
+ * @function formatCompletedTodo
+ * @description 已完成待办数据
+ * @property {object} todoInfo
+ * @returns {object} { todoInfo, pointInfo }
+*/
 export function formatCompletedTodo(item) {
   const { key: id, deadline, type, score, cycleType } = item;
   const now = Date.now();

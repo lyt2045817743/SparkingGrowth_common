@@ -1,3 +1,12 @@
+/**
+ * @memberof utils
+ * @function getFullUrl
+ * @description 获取完整url
+ * @property {string} baseUrl 基本url
+ * @property {object} options
+ * @property {object} options.query query字段map
+ * @return {string} fullUrl
+ */
 export function getFullUrl(baseUrl, options = {}) {
   if (!baseUrl) return '';
 

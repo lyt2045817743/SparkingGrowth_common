@@ -1,3 +1,13 @@
+/**
+ * @memberof constants
+ * @name CourseTypeMap
+ * @description 课程类型枚举值
+ * @enum {number}
+ * @property {number} WebDoc 1
+ * @property {number} Book 2
+ * @property {number} Course 3
+ * @property {number} Forum 4
+*/
 export const CourseTypeMap = {
   WebDoc: 1,
   Book: 2,
