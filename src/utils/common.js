@@ -23,3 +23,30 @@ export function getFullUrl(baseUrl, options = {}) {
   queryStr = queryStr ? '?' + queryStr : '';
   return `${baseUrl}${queryStr}`;
 }
+
+/**
+ * @memberof utils
+ * @function getOptionsByLabelMap
+ * @property {object} labelMap
+ * @return {object} { label, value }
+ */
+export const getOptionsByLabelMap = (labelMap) => {
+  return Object.keys(labelMap).map((key) => ({
+    label: labelMap[key],
+    value: key
+  }))
+}
+
+/**
+ * @memberof utils
+ * @function getMapByOptions
+ * @property {array} options
+ * @property {number} options.value
+ * @property {string} options.label
+ * @return {object} { [value]: label }
+ */
+export const getMapByOptions = (options) => {
+  const map = {};
+  options.forEach((item) => map[item.value] = item.label);
+  return map;
+}
