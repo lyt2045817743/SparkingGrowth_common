@@ -22,18 +22,6 @@ export const TodoStatusLabel = {
   [TodoStatusMap.DoneButOverdue]: "逾期完成",
 };
 
-export const TodoStatusTagConfig = Object.keys(TodoStatusLabel).map((key) => ({
-  text: TodoStatusLabel[key],
-  value: key,
-}));
-
-export const TodoStatusTagType = {
-  [TodoStatusMap.Undo]: "info",
-  [TodoStatusMap.Done]: "success",
-  [TodoStatusMap.Overdue]: "danger",
-  [TodoStatusMap.DoneButOverdue]: "warning",
-};
-
 export const TodoTypeMap = {
   Undefined: 0,
   Summary: 1,

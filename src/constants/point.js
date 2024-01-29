@@ -6,8 +6,7 @@
  * @property {number} Todo 1，完成待办
  * @property {number} Exchange 2，积分兑换
  * @property {number} ExtraPoint 3，补偿积分
- * @enum {number} 
-*/
+ */
 export const PointEventTypeMap = {
   Todo: 1,
   Exchange: 2,
