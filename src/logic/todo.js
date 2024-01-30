@@ -4,9 +4,9 @@ import { TodoStatusMap } from '../constants'
 /**
  * @memberof logic
  * @function formatCompletedTodo
- * @description 已完成待办数据
+ * @description 已完成待办数据更新
  * @property {object} todoInfo
- * @returns {object} { todoInfo, pointInfo }
+ * @returns {object} { todoInfo }
 */
 export function formatCompletedTodo(item) {
   const { deadline } = item;
