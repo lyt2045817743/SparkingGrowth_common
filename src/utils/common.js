@@ -34,7 +34,7 @@ export function getFullUrl(baseUrl, options = {}) {
  * @return {object} { [labelKey]: label, [valueKey]: value }
  */
 export const getOptionsByLabelMap = (labelMap, config) => {
-  const { labelKey = 'label', valueKey = 'value' } = config ?? {};
+  const { labelKey = 'label', valueKey = 'value' } = config || {};
   return Object.keys(labelMap).map((key) => ({
     [labelKey]: labelMap[key],
     [valueKey]: key
@@ -53,7 +53,7 @@ export const getOptionsByLabelMap = (labelMap, config) => {
  * @return {object} { [value]: [label] }
  */
 export const getMapByOptions = (options, config) => {
-  const { labelKey = 'label', valueKey = 'value' } = config ?? {};
+  const { labelKey = 'label', valueKey = 'value' } = config || {};
   const map = {};
   options.forEach((item) => map[item[valueKey]] = item[labelKey]);
   return map;
