@@ -28,12 +28,16 @@ export function getFullUrl(baseUrl, options = {}) {
  * @memberof utils
  * @function getOptionsByLabelMap
  * @property {object} labelMap
- * @return {object} { label, value }
+ * @property {object} config
+ * @property {string} config.labelKey
+ * @property {string} config.valueKey
+ * @return {object} { [labelKey]: label, [valueKey]: value }
  */
-export const getOptionsByLabelMap = (labelMap) => {
+export const getOptionsByLabelMap = (labelMap, config) => {
+  const { labelKey = 'label', valueKey = 'value' } = config ?? {};
   return Object.keys(labelMap).map((key) => ({
-    label: labelMap[key],
-    value: key
+    [labelKey]: labelMap[key],
+    [valueKey]: key
   }))
 }
 
@@ -43,10 +47,14 @@ export const getOptionsByLabelMap = (labelMap) => {
  * @property {array} options
  * @property {number} options.value
  * @property {string} options.label
- * @return {object} { [value]: label }
+ * @property {object} config
+ * @property {string} config.labelKey
+ * @property {string} config.valueKey
+ * @return {object} { [value]: [label] }
  */
-export const getMapByOptions = (options) => {
+export const getMapByOptions = (options, config) => {
+  const { labelKey = 'label', valueKey = 'value' } = config ?? {};
   const map = {};
-  options.forEach((item) => map[item.value] = item.label);
+  options.forEach((item) => map[item[valueKey]] = item[labelKey]);
   return map;
 }
