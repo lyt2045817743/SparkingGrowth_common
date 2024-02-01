@@ -38,8 +38,8 @@ export const TodoTypeScore = {
 
 function getCascadeOptionsByFilter(filters) {
   return filters.map((key) => ({
-    value: key,
-    label: TodoTypeLabel[key],
+    id: key,
+    name: TodoTypeLabel[key],
   }));
 }
 
@@ -51,8 +51,8 @@ function getCascadeOptionsByFilter(filters) {
 */
 export const TypeCascadeOptions = [
   {
-    value: 100,
-    label: "简单分类",
+    id: -9999,
+    name: "简单分类",
     children: getCascadeOptionsByFilter([
       TodoTypeMap.Undefined,
       TodoTypeMap.Simple,
