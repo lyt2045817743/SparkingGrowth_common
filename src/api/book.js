@@ -9,7 +9,7 @@ export const BookStoreName = 'book';
  * @property {number} filters.type 书籍类型
  * @returns {Array} 书籍列表数据
  */
-async function getBookList(filters) {
+async function getBookList(filters = {}) {
   let list = await db.getAll(BookStoreName);
   if (filters.type) {
     list = list.filter((item) => item.type === filters.type);
