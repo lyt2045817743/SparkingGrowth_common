@@ -3,11 +3,11 @@ import { TypeCascadeOptions as baseOptions, getMapByOptions, TodoTypeLabel } fro
 
 /**
  * @memberof logic
- * @function formatActivityOptions
+ * @function getActivityOptions
  * @description 获取活动级联选项、map映射
  * @returns {object} { options, labelMap }
 */
-async function formatActivityOptions() {
+async function getActivityOptions() {
   const activityData = await getActivityList();
   const bookData = await getBookList();
   const courseData = await getCourseList();
@@ -37,5 +37,5 @@ async function formatActivityOptions() {
 }
 
 export {
-  formatActivityOptions
+  getActivityOptions
 }
