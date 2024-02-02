@@ -4,3 +4,4 @@
  * import { formatCompletedTodo } from '@sparking/common';
  */
 export * from './todo';
+export * from './activity';
