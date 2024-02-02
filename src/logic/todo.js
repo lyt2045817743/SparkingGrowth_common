@@ -1,6 +1,5 @@
 import { TodoStatusMap } from '../constants'
 
-
 /**
  * @memberof logic
  * @function formatCompletedTodo
