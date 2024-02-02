@@ -1,5 +1,6 @@
 import { getActivityList, getBookList, getCourseList } from '../api';
-import { TypeCascadeOptions as baseOptions, getMapByOptions, TodoTypeLabel } from '../constants';
+import { TypeCascadeOptions as baseOptions, TodoTypeLabel } from '../constants';
+import { getMapByOptions } from '../utils';
 
 /**
  * @memberof logic
