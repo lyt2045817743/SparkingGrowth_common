@@ -25,13 +25,13 @@ async function getActivityOptions() {
       parentItem.children = [data[i]];
     }
   }
-  typeCascadeOptions = baseOptions.concat(parentData);
+  const typeCascadeOptions = baseOptions.concat(parentData);
 
   const option = { labelKey: 'name', valueKey: 'id' };
   const cateTitleMap = getMapByOptions(activityData, option);
   const bookTittleMap = getMapByOptions(bookData, option);
   const courseTittleMap = getMapByOptions(courseData, option);
-  labelMap = Object.assign(cateTitleMap, TodoTypeLabel, bookTittleMap, courseTittleMap);
+  const labelMap = Object.assign(cateTitleMap, TodoTypeLabel, bookTittleMap, courseTittleMap);
 
   return { options: typeCascadeOptions, labelMap };
 }
