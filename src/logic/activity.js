@@ -18,7 +18,7 @@ async function getActivityOptions() {
   // console.log(data);
   for (let i = 0; i < data.length; i++) {
     if (data[i].level === 1) continue;
-    const parentItem = data.find((item) => item.id === data[i].parentId || item.id === data[i].type) ?? {};
+    const parentItem = data.find((item) => item.id === data[i].parentId || item.id === data[i].type) || {};
     if (parentItem.children) {
       parentItem.children.push(data[i]);
     } else {
